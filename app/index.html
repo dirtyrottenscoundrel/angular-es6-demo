@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="angularEs6Demo" ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <title>Listings</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    <!-- bower:css -->
+    <!-- bower installed css files will go here... -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- built css files will go here... -->
+    <!-- endinject -->
+  </head>
+  <body>
+    <div class="viewport Column">
+      <div ui-view class="Column Container-expand"></div>
+
+      <span class="Container-fixed"><hr></span>
+
+      <ul class="ViewSwitcher Container-fixed">
+        <li ui-sref-active="active"><a ui-sref="venues.list">Venues</a></li>
+      </ul>
+    </div>
+
+    <!-- bower:js -->
+    <!-- bower installed scripts will go here... -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- app scripts will go here... -->
+    <!-- endinject -->
+  </body>
+</html>

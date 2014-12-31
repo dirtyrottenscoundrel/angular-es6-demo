@@ -1,0 +1,36 @@
+{
+  "name": "angular-es6-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.3.8",
+    "angular-ui-router": "~0.2.11",
+    "angular-animate": "1.3.8",
+    "angular-messages": "~1.3.8",
+    "bootstrap": "~3.2.0",
+    "fontawesome": "~4.2.0",
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.8"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "angular.min.js",
+        "angular-csp.css"
+      ]
+    },
+    "angular-animate": {
+      "main": "angular-animate.min.js"
+    },
+    "angular-messages": {
+      "main": "angular-messages.min.js"
+    },
+    "bootstrap": {
+      "main": []
+    },
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
+}

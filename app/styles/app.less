@@ -1,0 +1,38 @@
+@import "bootstrap";
+@import "_toolbar";
+@import "_recessed-list";
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+.viewport {
+  .container-fluid;
+
+  width: 350px;
+  height: 600px;
+
+  padding: 1em;
+}
+
+.Column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Container-fixed {
+  flex: none;
+}
+
+.Container-expand {
+  flex: 1 1 100%;
+}
+
+.ViewSwitcher {
+  .nav;
+  .nav-pills;
+}

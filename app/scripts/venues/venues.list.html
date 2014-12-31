@@ -1,0 +1,22 @@
+<div class="Toolbar Container-fixed">
+  <a class="Toolbar-button"><i class="fa fa-plus"></i></a>
+
+  <div class="Toolbar-group">
+    <a class="Toolbar-button">
+      <i class="fa fa-edit"></i>
+    </a>
+    <a class="Toolbar-button">
+      <i class="fa fa-remove"></i>
+    </a>
+  </div>
+
+  <a class="Toolbar-button"><i class="fa fa-bolt"></i></a>
+</div>
+<span class="Container-fixed"><hr></span>
+<div selectable class="RecessedList Container-expand">
+  <a href="" class="RecessedList-item"
+     ng-repeat="venue in ctrl.viewModel.venues track by $id(venue)"
+     ng-click="selectable.select(venue.$$hashKey)">
+    {{::venue.name}}
+  </a>
+</div>

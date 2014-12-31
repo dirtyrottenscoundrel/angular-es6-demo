@@ -1,0 +1,50 @@
+// This is cribbed from TWBS, but much simpler, for this simple case.
+.Toolbar {
+  margin-left: -5px; // Offset the first child's margin
+  &:extend(.clearfix all);
+
+  &-group {
+    position: relative;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-button {
+    .btn;
+    .btn-default;
+
+    position: relative;
+    float: left;
+  }
+
+  & > &-button,
+  & > &-group {
+    margin-left: 5px;
+  }
+
+  &-group.disabled > &-button { &:extend(.btn.disabled); }
+
+  // Under a group, neighboring buttons should overlap slightly to avoid
+  // doubled borders
+  &-group &-button + &-button {
+    margin-left: -1px;
+  }
+
+  // Under a group, draw buttons together and round only the group's outside
+  // corners
+  &-group > &-button:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  &-group > &-button:first-child {
+    margin-left: 0;
+    &:not(:last-child) {
+      .border-right-radius(0);
+    }
+  }
+
+  &-group > &-button:last-child:not(:first-child) {
+    .border-left-radius(0);
+  }
+}
