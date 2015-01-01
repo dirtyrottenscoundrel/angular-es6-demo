@@ -23,69 +23,72 @@ npm install
 gulp
 ```
 
+Running `gulp` transforms the contents of the `app/` directory and places the
+result into the `dist/` directory.
+
+<table>
+  <tr valign="top">
+    <td>
+      <pre>
+        app
+        ├── images
+        │   └── favicon.ico
+        ├── scripts
+        │   ├── components
+        │   │   ├── router
+        │   │   │   └── router.js
+        │   │   ├── selectable
+        │   │   │   └── selectable.js
+        │   │   └── venue-store
+        │   │       ├── venue-store.js
+        │   │       └── venue-store.test.js
+        │   ├── venues
+        │   │   ├── venues-controller.js
+        │   │   ├── venues.html
+        │   │   └── venues.list.html
+        │   └── index.js
+        ├── styles
+        │   ├── app.less
+        │   ├── bootstrap.less
+        │   ├── _recessed-list.less
+        │   └── _toolbar.less
+        └── index.html
+      </pre>
+    </td>
+    <td>
+      <pre>
+        dist
+        ├── fonts
+        │   ├── FontAwesome.otf
+        │   ├── fontawesome-webfont.eot
+        │   ├── fontawesome-webfont.svg
+        │   ├── fontawesome-webfont.ttf
+        │   └── fontawesome-webfont.woff
+        ├── images
+        │   └── favicon.ico
+        ├── scripts
+        │   ├── app.js
+        │   ├── app.js.map
+        │   ├── app.partials.js
+        │   ├── vendor.js
+        │   └── vendor.js.map
+        ├── styles
+        │   ├── app.css
+        │   ├── app.css.map
+        │   ├── vendor.css
+        │   └── vendor.css.map
+        └── index.html
+      </pre>
+    </td>
+  </tr>
+</table>
+
 ### Serve
 
 ```
 cd dist  
 python2 -m SimpleHTTPServer
 ```
-
-<table>
-  <tr>
-    <td>
-<pre>
-app
-├── images
-│   └── favicon.ico
-├── scripts
-│   ├── components
-│   │   ├── router
-│   │   │   └── router.js
-│   │   ├── selectable
-│   │   │   └── selectable.js
-│   │   └── venue-store
-│   │       ├── venue-store.js
-│   │       └── venue-store.test.js
-│   ├── venues
-│   │   ├── venues-controller.js
-│   │   ├── venues.html
-│   │   └── venues.list.html
-│   └── index.js
-├── styles
-│   ├── app.less
-│   ├── bootstrap.less
-│   ├── _recessed-list.less
-│   └── _toolbar.less
-└── index.html
-</pre>
-    </td>
-    <td>
-<pre>
-dist
-├── fonts
-│   ├── FontAwesome.otf
-│   ├── fontawesome-webfont.eot
-│   ├── fontawesome-webfont.svg
-│   ├── fontawesome-webfont.ttf
-│   └── fontawesome-webfont.woff
-├── images
-│   └── favicon.ico
-├── scripts
-│   ├── app.js
-│   ├── app.js.map
-│   ├── app.partials.js
-│   ├── vendor.js
-│   └── vendor.js.map
-├── styles
-│   ├── app.css
-│   ├── app.css.map
-│   ├── vendor.css
-│   └── vendor.css.map
-└── index.html
-</pre>
-    </td>
-  </tr>
-</table>
 
 ## TODO
 
